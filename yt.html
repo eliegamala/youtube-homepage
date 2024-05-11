@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>youtube clone</title>
+    <link rel="stylesheet" href="CSSstyles/ytStyles.css" />
+    <link rel="stylesheet" href="CSSstyles/header.css" />
+    <link rel="stylesheet" href="CSSstyles/general.css" />
+    <link rel="stylesheet" href="CSSstyles/sidebarStyles.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+        </button>
+      </div>
+
+      <div class="right-section">
+        <img class="upload-icon" src="icons/upload.svg" />
+        <img class="youtube-apps" src="icons/youtube-apps.svg" />
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+        </div>
+
+        <img class="profile-icon" src="chanelPics/narutoPfp.jpeg" />
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>youtube music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>library</div>
+      </div>
+    </div>
+    <div class="video-grid">
+      <!-- div 0 main div-->
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/hateChris.jpg" />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img class="chanel-img" src="chanelPics/chrispfp.jpg" />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">
+              everybody hates chris most funniest moments
+            </p>
+            <p class="chanel-name">Everybody hates chris</p>
+            <p class="chanel-stats">36M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/bringmetolife.jpg" />
+          <div class="video-time">08:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img class="chanel-img" src="chanelPics/evanescence.jpg" />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">bring me to life music video</p>
+            <p class="chanel-name">evanescence</p>
+            <p class="chanel-stats">50M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/naruto.jpg" />
+          <div class="video-time">7:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img class="chanel-img" src="chanelPics/narutoPfp.jpeg" />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">Naruto Vs Pain full fight</p>
+            <p class="chanel-name">Naruto</p>
+            <p class="chanel-stats">36M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/cssguy.jpg" />
+          <div class="video-time">05:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img
+              class="chanel-img"
+              src="data:image/png;base64,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"
+            />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">Learn Html And Css Full course</p>
+            <p class="chanel-name">superSimpleDive</p>
+            <p class="chanel-stats">50M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/ghilbi.jpg" />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img
+              class="chanel-img"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png"
+            />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">Studio Ghibli Music for 2 hours</p>
+            <p class="chanel-name">Studio Ghilbi</p>
+            <p class="chanel-stats">36M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/yacty.jpg" />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img
+              class="chanel-img"
+              src="https://ygo-assets-entities-us.yougov.net/a971465f-33cb-11e7-a8d0-a9b87c6154c3.jpg?zcw=720&zch=720&zct=0&zcl=135&ph=264"
+            />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">lil yacty - cortex</p>
+            <p class="chanel-name">lil boat</p>
+            <p class="chanel-stats">50M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/xxl2016.jpg" />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img
+              class="chanel-img"
+              src="https://e.snmc.io/i/600/s/442a5d9e525c11ed77de79b7e94b055e/7712140"
+            />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">XXL cypher 2016</p>
+            <p class="chanel-name">xxl cypher</p>
+            <p class="chanel-stats">36M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/dave.jpg" />
+          <div class="video-time">04:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img
+              class="chanel-img"
+              src="https://www.naijanews.com/buzz/wp-content/uploads/2023/03/Santan-Dave.jpg"
+            />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">Santan Dave - Law of Attraction</p>
+            <p class="chanel-name">santan dave</p>
+            <p class="chanel-stats">36M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-section">
+          <!-- div 1 thumbnail section-->
+          <img class="thumbnail" src="thumbnails/bringmetolife.jpg" />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <!-- div 2 information section-->
+
+          <div class="profile-section">
+            <img class="chanel-img" src="chanelPics/evanescence.jpg" />
+          </div>
+
+          <div class="stats-section">
+            <p class="video-title">bring me to life music video</p>
+            <p class="chanel-name">evanescence</p>
+            <p class="chanel-stats">50M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
